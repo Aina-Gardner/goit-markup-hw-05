@@ -17,22 +17,25 @@
 
   <body>
     <!-- Header -->
-    <header class="container header-container">
+    <header class="header-container">
       <!-- <nav class="navigation"> -->
-        <p>
+        
+        <div class="container header-menu">
+          <p>
           <a class="logo" href="./index.html" lang="en">Web<span class="logo-studio">Studio</span></a>
         </p>
         <ul class="list menu">
-          <li class="menu-item">
+          <li class="menu-item labe">
             <a
-              class="menu-link link" href="./index.html" title="Студия">Студия</a>
+              class="menu-link link current" href="./index.html" title="Студия">Студия</a>
           </li>
           <li class="menu-item">
             <a
-              class="menu-link link" href="./portfolio.html" title="Портфолио">Портфолио</a>
+              class="menu-link link current" href="./portfolio.html" title="Портфолио">Портфолио</a>
           </li>
-          <li class="menu-item"><a class="menu-link link" href="">Контакты</a></li>
+          <li class="menu-item current"><a class="menu-link link" href="">Контакты</a></li>
         </ul>
+      </div>
       <!-- </nav> -->
 
       <ul class="list contacts-list">
@@ -118,6 +121,7 @@
               alt="работа за компьютером"
               width="370"
             />
+            <p class="about-overlay">Десктопные приложения</p>
           </li>
           <li class="about-item">
             <img
@@ -126,6 +130,7 @@
               alt="работа с телефоном и компьютером"
               width="370"
             />
+            <p class="about-overlay">Мобильные приложения</p>
           </li>
           <li class="about-item">
             <img
@@ -134,13 +139,14 @@
               alt="разноцветная диаграмма на планшете"
               width="370"
             />
+            <p class="about-overlay">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
       </section>
 
-      <section class="our-team section">
-        <div class="container">
+      <section class="our-team section container-bcg">
+        <div class="container cbs">
         <h2 class="our-team-title">Наша команда</h2>
         <ul class="list our-team-list">
           <li class="our-team-item">
