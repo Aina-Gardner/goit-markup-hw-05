@@ -18,26 +18,23 @@
   <body>
     <!-- Header -->
     <header class="header-container">
-      <!-- <nav class="navigation"> -->
-        
-        <div class="container header-menu">
-          <p>
+      <div class="container">
+        <nav class="navigation">
+        <p>
           <a class="logo" href="./index.html" lang="en">Web<span class="logo-studio">Studio</span></a>
         </p>
         <ul class="list menu">
-          <li class="menu-item labe">
+          <li class="menu-item ">
             <a
               class="menu-link link current" href="./index.html" title="Студия">Студия</a>
           </li>
           <li class="menu-item">
             <a
-              class="menu-link link current" href="./portfolio.html" title="Портфолио">Портфолио</a>
+              class="menu-link link" href="./portfolio.html" title="Портфолио">Портфолио</a>
           </li>
-          <li class="menu-item current"><a class="menu-link link" href="">Контакты</a></li>
+          <li class="menu-item"><a class="menu-link link" href="">Контакты</a></li>
         </ul>
-      </div>
-      <!-- </nav> -->
-
+      
       <ul class="list contacts-list">
         <li class="contact-item">
           <a class="link contact-mail" href="mailto:info@devstudio.com"><svg class="icon-mail" width="16" height="12">
@@ -51,6 +48,8 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
+    </nav>
+    </div>
     
     </header>
     <!-- Main -->
@@ -61,7 +60,7 @@
             Эффективные решения
             <br />для вашего бизнеса
           </h1>
-          <button class="modal-btn" name="button">Заказать услугу</button>
+          <button class="modal-btn" name="button" data-modal-open>Заказать услугу</button>
         </section>
       </div>
 
@@ -121,7 +120,6 @@
               alt="работа за компьютером"
               width="370"
             />
-            <p class="about-overlay">Десктопные приложения</p>
           </li>
           <li class="about-item">
             <img
@@ -130,7 +128,6 @@
               alt="работа с телефоном и компьютером"
               width="370"
             />
-            <p class="about-overlay">Мобильные приложения</p>
           </li>
           <li class="about-item">
             <img
@@ -139,14 +136,13 @@
               alt="разноцветная диаграмма на планшете"
               width="370"
             />
-            <p class="about-overlay">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
       </section>
 
-      <section class="our-team section container-bcg">
-        <div class="container cbs">
+      <section class="our-team section">
+        <div class="container">
         <h2 class="our-team-title">Наша команда</h2>
         <ul class="list our-team-list">
           <li class="our-team-item">
@@ -392,5 +388,19 @@
       </ul>
       </div>
     </footer>
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-btn-icon" width="18"
+          height="18">
+            <use href="./images/sprite.svg#icon-close-modal"></use>>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
