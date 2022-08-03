@@ -496,11 +496,12 @@ top: 430px;
 }
 
 .footer-part1 {
- 
+  padding-right: 70px;
 }
 
 .footer-logo {
- 
+ display: flex;
+ align-items: baseline;
   
 }
 
